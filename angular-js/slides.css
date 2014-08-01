@@ -1,12 +1,12 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
+/*@import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
+*/
 body {
-  font-family: 'Droid Serif';
+  font-family: 'Droid Sans';
 }
 h1, h2, h3 {
-  font-family: 'Yanone Kaffeesatz';
+/*  font-family: 'Yanone Kaffeesatz'*/;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -30,7 +30,7 @@ code {
   background: #e7e8e2;
   border-radius: 5px;
 }
-.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+/*.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }*/
 .remark-code-line-highlighted     { background-color: #373832; }
 .pull-left {
   float: left;
@@ -57,7 +57,7 @@ code {
 }
 .inverse h1, .inverse h2 {
   color: #f3f3f3;
-  line-height: 0.8em;
+  line-height: 1.2em;
 }
 
 /* Slide-specific styling */
@@ -112,7 +112,28 @@ code {
 }
 
 .bg-red {
-background: #A60A17;
+  background: #A60A17;
+}
+.bg-dark{
+  color: white;
+  text-shadow: 0 0 20px #333;
+}
+.blue-bg{
+background-image: url(./images/blue-background.jpg)
 }
 
-/*https://github.com/gnab/remark*/
+
+.line-through{
+  text-decoration:line-through;
+}
+
+#angular-vocabulary{
+  color: darkgreen;
+}
+
+/*
+https://github.com/gnab/remark
+
+Tutorial
+http://remarks.sinaapp.com/repo/greatghoul/remarks/intro/?branch=devel#1
+*/
