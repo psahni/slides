@@ -19,8 +19,6 @@ class: center, middle, inverse
 [ Prashant Sahni ]
 [ Web Developer ]
 ---
-## What is it and why should I be using it?
----
 class: bg-red
 <img src='./images/angular_logo.png'/>
 ## AngularJS is a javascript framework used for creating single page applications.
@@ -37,12 +35,14 @@ class: vocabulary
 # Angular vocabulary
 
 --
--  Scope
--  Model-Views-Controllers
+-  $scope
+-  Model | View | Controllers
 -  Data Binding
 -  Directives
 -  Dependency injection
 -  Filters
+-  Factory and services
+-  Routing
 -  $watch, $apply
 ---
 template: inverse
@@ -73,9 +73,46 @@ template: inverse
 ```html
 <button ng-click="doSomething()">Click Here</button>
 ```
+---
+* Mobile Phone
+* Laptop
+* Book
+* Fan
+* Stationary
 --
-<input type='checkbox' id='check' checked> Toggle
-### Hello World
+
+```javascript
+ $scope.items = [
+        {name: 'Mobile Phone'},
+        {name: 'Laptop'},
+        {name: 'Book'},
+        {name: 'Fan'},
+        {name: 'Stationary'}
+    ]
+```
+--
+```html
+<ul class='items' ng-controller='CtrlName'>
+      <li ng-repeat='item in items | filter:searchText'>
+        {{item.name}}
+      </li>
+</ul>
+```
+--
+```
+  $http
+```
+--
+```
+$http.get("http://example.com/items")
+```
+---
+```html
+<form ng-submit='addName()'>
+  <input type='text' ng-model='enteredName'/>
+  <input type='submit' value='add'>
+</form>
+```
 </textarea>
     <script src="./remark.js" type="text/javascript"></script>
     <script src='./jquery.js'></script>
@@ -99,13 +136,7 @@ template: inverse
             $(this).toggleClass('line-through')
           });
 
-          $("#check").bind('click', function(){
-            if($(this)[0].checked){
-              $("#hello-world").fadeIn();
-            }else{
-              $("#hello-world").fadeOut();
-            }
-          });
+         
         });
       }
 
