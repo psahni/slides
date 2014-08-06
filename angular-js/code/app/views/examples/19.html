@@ -10,7 +10,7 @@
     countryApp.config(function($routeProvider) {
       $routeProvider.
         when('/', {
-          templateUrl: 'countries.html',
+          templateUrl: 'country-list.html',
           controller: 'CountryListCtrl'
         }).
         when('/:countryName', {
@@ -30,10 +30,12 @@
 
     countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, $http){
       $scope.name = $routeParams.countryName;
+
       $http.get('/countries.json').success(function(data) {
-        angular.forEach(data, function(value){
-           if(value.name === $scope.name) $scope.country = value;
-         });
+        console.log(data);
+        $scope.country = data.filter(function(entry){
+          return entry.name === $scope.name;
+        })[0];
       });
     });
   </script>
