@@ -22,7 +22,7 @@ app.config(['$routeProvider', function($routeProvider){
     $routeProvider.when('/example7', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example8', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example9', {templateUrl: 'views/example.html', controller: 'Examples'});
-    $routeProvider.when('/example10', {templateUrl: 'views/example.html', controller: 'Examples'});
+    $routeProvider.when('example10', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example11', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example12', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example13', {templateUrl: 'views/example.html', controller: 'Examples'});
@@ -37,6 +37,7 @@ app.config(['$routeProvider', function($routeProvider){
     $routeProvider.when('/example22', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example23', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example24', {templateUrl: 'views/example.html', controller: 'Examples'});
+    $routeProvider.when('/:countryName', {templateUrl: 'views/examples/test.html', controller: 'countryExample'})
 }]);
 
 
