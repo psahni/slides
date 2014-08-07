@@ -14,7 +14,7 @@
           controller: 'CountryListCtrl'
         }).
         when('/:countryName', {
-          templateUrl: 'country-detail-1.html',
+          templateUrl: 'country-detail.html',
           controller: 'CountryDetailCtrl'
         }).
         otherwise({
@@ -30,6 +30,11 @@
 
     countryApp.controller('CountryDetailCtrl', function ($scope, $routeParams, $http){
       $scope.name = $routeParams.countryName;
+      $http.get('/countries.json').success(function(data) {
+        angular.forEach(data, function(value){
+          if(value.name === $scope.name) $scope.country = value;
+        });
+      });
     });
   </script>
 </head>
