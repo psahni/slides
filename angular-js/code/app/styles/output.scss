@@ -7,3 +7,13 @@ input[type='text']{
 }
 
 
+
+ul.list-countries{
+  width:  100%;
+}
+ul.list-countries li{
+  display: inline;
+  float: left;
+  width:  25%;
+  padding: 10px;
+}
