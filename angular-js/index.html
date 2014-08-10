@@ -19,7 +19,19 @@ class: center, middle, inverse
 [ Prashant Sahni ]
 [ Web Developer ]
 ---
-class: bg-red
+layout: false
+class: resource-link
+# What is angular js?
+# Examples
+# Angular Vocabulary
+## Slides:-
+##https://github.com/psahni/slides
+## Code:-
+##https://github.com/psahni/slides/tree/master/angular-js/code
+---
+layout: true
+class: center, middle, inverse, bg-red
+---
 <img src='./images/angular_logo.png'/>
 ## AngularJS is a javascript framework used for creating single page applications.
 ---
@@ -28,125 +40,61 @@ class: bg-red
 Framework ?
 ---
 <img src='./images/angularA.png'/>
-#  Welcome to the ng-world &#8594;
+#  $ Welcome to the ng-world
 ---
-layout: false
-class: vocabulary
-# Angular vocabulary
+class: fb-blue
+#$scope
+---
+class: fb-blue
+#$scope
+---
+class: fb-blue
+#Data Binding
+---
+class: fb-blue
+#Model | View | Controllers
+---
+class: fb-blue
+#Directives
+---
+class: fb-blue
+#Dependency injection
+---
+class: fb-blue
+#Filters
+---
+class: fb-blue
+#Routing
+---
+class: fb-blue
+#Factory and Services
 
---
--  $scope
--  Model | View | Controllers
--  Data Binding
--  Directives
--  Dependency injection
--  Filters
--  Factory and services
--  Routing
--  $watch, $apply
--  Talking to server
---
-## Tools
-- Yomen
-- Grunt
-- Grunt
----
-template: inverse
-# Examples
----
-
-```javascript
-  <script src='angular.min.js'></script>
-```
---
-```html
-<p>This is your first angular expression: {{ 1 + 2 }}</p>
-```
---
-```html
- Enter your name: <input type="text" ng-model="name"></input>
- <p>Hello {{name}}</p>
-```
---
-```html
-<p>Hello {{name | uppercase }}!</p>
-```
---
-```html
-<p>Your name is {{name}}</p>
-```
---
-```html
-<button ng-click="doSomething()">Click Here</button>
-```
----
-* Mobile Phone
-* Laptop
-* Book
-* Fan
-* Stationary
---
-
-```javascript
- $scope.items = [
-        {name: 'Mobile Phone'},
-        {name: 'Laptop'},
-        {name: 'Book'},
-        {name: 'Fan'},
-        {name: 'Stationary'}
-    ]
-```
---
-```html
-<ul class='items' ng-controller='CtrlName'>
-      <li ng-repeat='item in items | filter:searchText'>
-        {{item.name}}
-      </li>
-</ul>
-```
---
-```
-  $http
-```
---
-```
-$http.get("http://example.com/items")
-```
----
-```html
-<form ng-submit='addName()'>
-  <input type='text' ng-model='enteredName'/>
-  <input type='submit' value='add'>
-</form>
-```
 </textarea>
-    <script src="./remark.js" type="text/javascript"></script>
-    <script src='./jquery.js'></script>
-    <script type="text/javascript">
-      var hljs = remark.highlighter.engine;
-    </script>
-    <script src="remark.language.js" type="text/javascript"></script>
-    <script type="text/javascript">
-      var slideshow = remark.create({
-          highlightStyle: 'monokai',
-          highlightLanguage: 'remark',
-          navigation: {
-              scroll: false
-          }
-        }) ;
 
 
-      if(jQuery){
-        jQuery(function($){
-          $(".vocabulary ul li").click(function(){
-            $(this).toggleClass('line-through')
-          });
 
-         
-        });
+<script src="./remark.js" type="text/javascript"></script>
+<script src='./jquery.js'></script>
+<script type="text/javascript">
+  var hljs = remark.highlighter.engine;
+</script>
+<script src="remark.language.js" type="text/javascript"></script>
+<script type="text/javascript">
+  var slideshow = remark.create({
+      highlightStyle: 'monokai',
+      highlightLanguage: 'remark',
+      navigation: {
+          scroll: false
       }
-
-    </script>
+    }) ;
+  if(jQuery){
+    jQuery(function($){
+      $(".vocabulary ul li").click(function(){
+        $(this).toggleClass('line-through')
+      });     
+    });
+  }
+</script>
 
   </body>
 </html>

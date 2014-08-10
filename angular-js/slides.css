@@ -131,6 +131,14 @@ background-image: url(./images/blue-background.jpg)
   color: darkgreen;
 }
 
+.fb-blue{
+  background-color: #3b5998;
+}
+
+.resource-link h2{
+ font-size: 1.4em;
+}
+
 /*
 https://github.com/gnab/remark
 
