@@ -139,6 +139,10 @@ background-image: url(./images/blue-background.jpg)
  font-size: 1.4em;
 }
 
+.no-middle{
+  vertical-align: text-top !important;
+}
+
 /*
 https://github.com/gnab/remark
 
