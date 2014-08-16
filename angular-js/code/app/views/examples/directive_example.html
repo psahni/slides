@@ -1,0 +1,37 @@
+<html ng-app='directiveExample'>
+    <head>
+        <link rel="stylesheet" href="/styles/output.css"/>
+    </head>
+    <body>
+        <div ng-controller='myController'>
+            <flash></flash>
+            <button ng-click='submit()'>Submit</button>
+        </div>
+    </body>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+    <script type="text/javascript">
+        var app = angular.module('directiveExample', []);
+
+        app.controller('myController', function($scope){
+            $scope.klass = 'alert';
+            $scope.message = "Alert Message";
+
+            $scope.submit = function(){
+                $scope.klass = 'success';
+                $scope.message = 'Success Message'
+            }
+        });
+        app.directive('flash', function(){
+            return{
+                restrict: 'EA',
+                template: "<div class='{{klass}}'>{{message}}</div>" ,
+                link: function(scope){
+                   console.log("I am called");
+                }
+            }
+        });
+
+    </script>
+</html>

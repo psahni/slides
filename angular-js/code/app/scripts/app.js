@@ -40,6 +40,7 @@ app.config(['$routeProvider', function($routeProvider){
     $routeProvider.when('/example25', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example26', {templateUrl: 'views/example.html', controller: 'Examples'});
     $routeProvider.when('/example27', {templateUrl: 'views/example.html', controller: 'Examples'});
+    $routeProvider.when('/directive_example', {templateUrl: 'views/example.html', controller: 'MoreExamples'});
     $routeProvider.when('/:countryName', {templateUrl: 'views/examples/test.html', controller: 'countryExample'})
 }]);
 
