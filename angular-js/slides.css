@@ -139,6 +139,18 @@ background-image: url(./images/blue-background.jpg)
  font-size: 1.4em;
 }
 
+.grey-image{
+    background-color: #F3F3EA;
+    margin: 20px 0 0 0;
+    padding: 0 0 55px 0;
+    background-image: url(images/grey-image.jpg);
+    font-family: Arial,Helvetica;
+    color: #CA4C3F;
+}
+
+.grey-image h1{
+    color:midnightblue;
+}
 /*
 https://github.com/gnab/remark
 
