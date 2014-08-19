@@ -96,7 +96,7 @@ iframe {
 
 .CodeMirror {
     border: 1px solid #eee;
-    height: auto;
+    height: 500px !important;
 }
 .CodeMirror-scroll {
     overflow-y: auto;
