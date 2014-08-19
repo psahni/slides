@@ -151,6 +151,15 @@ background-image: url(./images/blue-background.jpg)
 .grey-image h1{
     color:midnightblue;
 }
+.green{
+color: green;
+}
+.bold{
+
+}
+.red{
+  color: red;
+}
 /*
 https://github.com/gnab/remark
 

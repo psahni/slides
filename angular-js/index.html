@@ -26,14 +26,20 @@
     # Examples
     # Angular Vocabulary
     ## Slides:-
-    ##https://github.com/psahni/slides
+    <a href='https://github.com/psahni/slides'>https://github.com/<span class='github_id'>psahni</span>/slides</a>
     ## Code:-
-    ##https://github.com/psahni/slides/tree/master/angular-js/code
+    <a href='https://github.com/psahni/slides/tree/master/angular-js/code'>
+      https://github.com/<span class='github_id'>psahni</span>/slides/tree/master/angular-js/code
+    </a>
+    <br/>
+    <a href='https://bitbucket.org/prashant_sahni/contact-service/src' tatget='_blank'>
+      https://bitbucket.org/prashant_sahni/contact-service/src
+    </a>
     ---
     layout: true
     class: center, middle,inverse, bg-red
     ---
-    <img src='./images/angular_logo.png'/>
+    <a href='https://angularjs.org/' target='_blank'><img src='./images/angular_logo.png'/></a>
     ## AngularJS is a javascript framework used for creating single page applications.
     ---
     # Single Page Application ?
@@ -119,6 +125,11 @@
             });
         });
     }
+    
+    setInterval(function(){
+        $(".github_id").toggleClass('red');
+    }, 1000);
+    
 </script>
 
 </body>
